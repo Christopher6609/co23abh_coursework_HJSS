@@ -53,7 +53,7 @@ public class Student {
     }
 
 
-    public String toString(){
-        return "************ Student Details ************"+ "\nStudent Name: " + name + "\nGender: " + gender + "\nAge: " + age + "\nEmergency Contact Number: " + emergencyContactNum + "\nGrade Level: "  +"\n";
-    }
+//    public String toString(){
+//        return "************ Student Details ************"+ "\nStudent Name: " + name + "\nGender: " + gender + "\nAge: " + age + "\nEmergency Contact Number: " + emergencyContactNum + "\nGrade Level: "  +"\n";
+//    }
 }

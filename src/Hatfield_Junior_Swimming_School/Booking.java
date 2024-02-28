@@ -1,13 +1,12 @@
-import Hatfield_Junior_Swimming_School.*;
+package Hatfield_Junior_Swimming_School;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+public class Booking {
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
     public static void main(String[] args) {
         Student student1 = new Student(1, "Christopher", Student.Gender.MALE, 10, "07778640904", Lesson.Grade.GRADE_1);
         Student student2 = new Student(2, "Daniel", Student.Gender.MALE, 20, "077493975833", Lesson.Grade.GRADE_2);
@@ -28,10 +27,8 @@ public class Main {
         Coach coach5 = new Coach(5, "Viktoria");
 
 
-
         Scanner input = new Scanner(System.in);
-//       System.out.println(student1.toString());
-//        System.out.println(coach1.toString());
+
 
         List<Student> studentList = new ArrayList<Student>();
         studentList.add(student1 = new Student(1, "Christopher", Student.Gender.MALE, 10, "07778640904", Lesson.Grade.GRADE_1));
@@ -53,21 +50,48 @@ public class Main {
         coachList.add(coach4 = new Coach(4, "Tina"));
         coachList.add(coach5 = new Coach(5, "Viktoria"));
         Coach[] coachesArray = coachList.toArray(new Coach[0]);
-        System.out.println("********** Welcome to Hatfield Swimming School **********" + "\nKindly proceed using the options below: ");
-
-        Operation menuList = new Operation();
 
 
+//        public void Booking(){
+//            System.out.println("I am here");
+//            for (Student i : studentsArray) {
+//                System.out.println("[" + i.getId() + "] " + i.getName());
+//                System.out.println("I am here too");
+//
+//            }
 
-
-
-
-
-
-
-
-
-
-
+//            Scanner input = new Scanner(System.in);
+//            boolean exit = false;
+//            int studentInput;
+//            do {
+//                for (Student i : studentsArray) {
+//                    System.out.println("[" + i.getId() + "] " + i.getName());
+//                }
+//                System.out.println("[0] Exit");
+//                System.out.print("Enter a number to proceed: ");
+//
+//
+//
+//                if (input.hasNextInt()) {
+//                    studentInput = input.nextInt();
+//                    if (studentInput == 0) {
+//                        System.exit(0);
+//                    }
+//
+//                    for (Student i : studentsArray) {
+//                        if (studentInput == i.getId()) {
+//                            System.out.println("Welcome " + i.getName() + "!");
+//                        }
+//
+//                    } exit = true;
+//                }
+//                else {
+//
+//                    System.out.println("\n\nInvalid Input!\n");
+//                    input.nextLine();
+//                }
+//            } while (!exit);
+        }
     }
-}
+    //}
+
