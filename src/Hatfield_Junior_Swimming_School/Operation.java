@@ -4,6 +4,8 @@ package Hatfield_Junior_Swimming_School;
 import java.util.Scanner;
 
 public class Operation {
+
+
     private int id;
     private String name;
     boolean exit = false;
@@ -29,15 +31,18 @@ public class Operation {
             if (menuIn.hasNextInt()){
                 int menuInput = menuIn.nextInt();
 
-               if (menuInput == 0){
-                   System.exit(0);
-
-               }
-                   else if(menuInput <= 6){
+//               if (menuInput == 0){
+//                   System.exit(0);
+//
+//               }
+//                   else if(menuInput <= 6){
                   //System.out.println("I am here");
                    switch (menuInput){
+                       case 0:
+                           System.exit(0);
+                           break;
                        case 1:
-                           Booking();
+                            //booking();
                            break;
                        case 2:
                            System.out.println("i want to change");
@@ -54,13 +59,20 @@ public class Operation {
                        case 6:
                            System.out.println("Register a new learner");
                            break;
+                       default:
+
+                           System.out.println("Invalid input!, Kindly enter a number between [0] - [6] ");
+                            break;
+
                    }
+                menuIn.nextLine();
+
                    exit = true;
-                }
-                   else{
-                    System.out.println("Invalid input!, Kindly enter a number between [0] - [6] ");
-                    menuIn.nextLine();
-                }
+                //}
+//                   else{
+//                    System.out.println("Invalid input!, Kindly enter a number between [0] - [6] ");
+//                    menuIn.nextLine();
+//                }
 
             }else{
                 System.out.println("Invalid input!, Kindly enter a valid input to proceed: ");
@@ -71,10 +83,10 @@ public class Operation {
 
     }
 
-public void Booking(){
-        System.out.println("Kindly select student name from the list");
-    System.out.println("[0]: ");
-}
+//public void Booking(){
+//        System.out.println("Kindly select student name from the list");
+//    System.out.println("[0]: ");
+//}
 
     public int getId(){
         return this.id;

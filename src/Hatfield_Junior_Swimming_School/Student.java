@@ -1,19 +1,22 @@
 package Hatfield_Junior_Swimming_School;
 
+import java.util.ArrayList;
+
 public class Student {
     private String name;
+    private int age;
+    private String emergencyContactNum;
+    private int id;
     public enum Gender{
         MALE,
         FEMALE,
         OTHERS;
     }
     Gender gender;
-
-    private int age;
-    private String emergencyContactNum;
+Lesson.Grade grade;
 
 
-    private int id;
+
 
     public Student(int id, String name, Gender gender, int age, String emergencyContactNum, Lesson.Grade grade){
         this.id = id;
@@ -21,8 +24,6 @@ public class Student {
         this.gender = gender;
         this.age = age;
         this.emergencyContactNum = emergencyContactNum;
-        //this.grade = grade;
-
 
     }
 
@@ -35,10 +36,6 @@ public class Student {
     public void setName(String name){
         this.name = name;
     }
-
-//    public void setGender(String gender){
-//        this.gender = gender;
-//    }
     public int getAge(){
         return this.age;
     }
@@ -48,12 +45,18 @@ public class Student {
     public String getEmergencyContactNum(){
         return this.emergencyContactNum;
     }
-    public void setEmergencyContactNum(String emergencyContactNum){
+    public void setEmergencyContactNum(String emergencyContactNum) {
         this.emergencyContactNum = emergencyContactNum;
+
     }
 
 
-//    public String toString(){
-//        return "************ Student Details ************"+ "\nStudent Name: " + name + "\nGender: " + gender + "\nAge: " + age + "\nEmergency Contact Number: " + emergencyContactNum + "\nGrade Level: "  +"\n";
-//    }
+//
+
+
+    public String toString(){
+        return "************ Student Details ************"+ "\nStudent Name: " + name + "\nGender: " + gender + "\nAge: " + age + "\nEmergency Contact Number: " + emergencyContactNum + "\nGrade Level: " + grade +"\n";
+    }
+
+
 }
